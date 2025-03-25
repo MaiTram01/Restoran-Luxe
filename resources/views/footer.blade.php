@@ -58,8 +58,7 @@
               <i class="fa-solid fa-location-dot text-white fa-2x border-bottom pb-2"></i>
               <div class="ps-3">
                 <p class="mb-0">
-                  157 White Oak Drive Kansas City <br>
-                  689 Lynn Street South Boston
+                  Son Tra, Da Nang
                 </p>
               </div>
             </div>
@@ -67,8 +66,7 @@
               <i class="fa-solid fa-mobile text-white fa-2x border-bottom pb-2"></i>
               <div class="ps-3">
                 <p class="mb-0">
-                  (617)-276-8031 <br>
-                  (617)-276-8031
+                  +84 458 729 580
                 </p>
               </div>
             </div>
@@ -76,8 +74,8 @@
               <i class="fa-solid fa-envelope text-white fa-2x border-bottom pb-2"></i>
               <div class="ps-3">
                 <p class="mb-0">
-                  admin@fooday.com <br>
-                  support@fooday.com
+                  admin@restoran.com <br>
+                  support@restoran.com
                 </p>
               </div>
             </div>

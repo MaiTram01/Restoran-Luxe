@@ -462,6 +462,35 @@ header.scrolled {
 }
 
 /* Search bar */
+.search {
+  position: relative;
+  width: 100%;
+  max-width: 180px; 
+}
+
+.search input[type="text"] {
+  width: 100%;
+  padding: 4px 4px; 
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  color: var(--primary-color);
+}
+
+.search i.fa-search {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+  pointer-events: none; 
+}
+.search input::placeholder {
+  font-size: 12px; 
+  color: var(--primary-color);    
+}
+/* ------- */
 
 .search-bar {
   display: flex;
@@ -527,6 +556,16 @@ header.scrolled {
   border-bottom-right-radius: 30px;
 }
 /* Search bar */
+
+/* Sign up - Sign - in */
+a.sign-in {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+}
+/* Sign up - Sign - in */
 
 /* shopping cart start */
 
@@ -1927,6 +1966,37 @@ footer p {
 }
 
 /* Reservation Page Start */
+
+.list-food {
+  padding: 20px;
+}
+
+.list-food .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+/* ------- */
 .reservation-page .banner {
   background-image: url("./../images/pagetitle-reservation.jpg");
 }

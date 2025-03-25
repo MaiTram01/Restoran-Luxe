@@ -26,4 +26,8 @@ class PageController extends Controller
     {
         return view('page.reservation');
     }
+    public function booktable()
+    {
+        return view('page.booktable');
+    }
 }

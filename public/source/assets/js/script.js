@@ -37,37 +37,6 @@ document.addEventListener("click", function(event) {
     }
 });
 
-// Search bar functionality
-const searchBtn = document.getElementById("searchBtn");
-const searchBtnMobile = document.getElementById("searchBtnMobile");
-const closeBtn = document.getElementById("search-close-btn");
-const searchCon = document.getElementById("search-container");
-
-// Show search container when search button is clicked
-searchBtn.addEventListener("click", (event) => {
-  event.preventDefault();
-  searchCon.classList.remove("d-none");
-  requestAnimationFrame(() => {
-    searchCon.classList.add("show");
-  });
-});
-
-// Show search container when mobile search button is clicked
-searchBtnMobile.addEventListener("click", (event) => {
-  event.preventDefault();
-  searchCon.classList.remove("d-none");
-  requestAnimationFrame(() => {
-    searchCon.classList.add("show");
-  });
-});
-
-// Hide search container when close button is clicked
-closeBtn.addEventListener("click", () => {
-  searchCon.classList.remove("show");
-  setTimeout(() => {
-    searchCon.classList.add("d-none");
-  }, 500); // Delay hiding the search container to allow animation to complete
-});
 
 
 // Header scroll behavior
@@ -270,34 +239,6 @@ $('.partner-slider').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }
-  ]
-});
-
-
-$('.chef-choise-slider').slick({
-  slidesToShow: 3,
-  vertical: true,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: false,
-  speed: 300,
-  draggable: true,
-  swipe: true,
-  responsive: [
-    {
-      breakpoint: 786,
-      settings: {
-        slidesToShow: 1.7,
         slidesToScroll: 1,
       }
     }

@@ -1,17 +1,5 @@
 @extends('master')
 @section('content')
-<div class="search-bar d-none" id="search-container">
-    <div class="close-btn" id="search-close-btn">
-        <i class="fa fa-close"></i>
-    </div>
-    <div class="search-bar-wrapper">
-        <input type="search" placeholder="Enter any text here..." />
-        <div class="search-button">
-            <a href="#"><i class="fa fa-search"></i></a>
-        </div>
-    </div>
-</div>
-
 <div class="shopping-cart">
     <div class="shopping-cart-header d-flex justify-content-between">
         <h2>Review your Cart</h2>
