@@ -241,6 +241,34 @@ $('.partner-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
       }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+
+$('.chef-choise-slider').slick({
+  slidesToShow: 3,
+  vertical: true,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: false,
+  speed: 300,
+  draggable: true,
+  swipe: true,
+  responsive: [
+    {
+      breakpoint: 786,
+      settings: {
+        slidesToShow: 1.7,
+        slidesToScroll: 1,
+      }
     }
   ]
 });
