@@ -20,7 +20,7 @@ return new class extends Migration
             $table->date('birth_day')->nullable(); 
             $table->string('phone_number', 10)->nullable();
             $table->string('email', 50)->nullable();
-            $table->enum('role', ['admin', 'staff', 'customer'])->default('customer');
+            $table->enum('role', ['admin','customer'])->default('customer');
             $table->dateTime('last_login')->nullable();
             $table->boolean('is_active')->default(true);
             $table->string('description', 255)->nullable();
