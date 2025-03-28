@@ -309,3 +309,85 @@ cartClose.forEach(function(closeBtn) {
     shoppingCart.style.right = "-100vw";
   });
 });
+
+// start payment
+document.addEventListener('DOMContentLoaded', function () {
+    const vnpayRadio = document.getElementById('pay-vnpay');
+    const paymentTypeOptions = document.getElementById('payment-type-options');
+    const methodRadios = document.querySelectorAll('input[name="payment_method"]');
+
+    function togglePaymentTypeOptions() {
+        if (vnpayRadio.checked) {
+            paymentTypeOptions.style.display = 'block';
+        } else {
+            paymentTypeOptions.style.display = 'none';
+        }
+    }
+    // Run on load
+    togglePaymentTypeOptions();
+
+    // Add listeners to all payment method radios
+    methodRadios.forEach(radio => {
+        radio.addEventListener('change', togglePaymentTypeOptions);
+    });
+});
+
+  // booking payment
+    let timeLeft = 15 * 60;
+    const countdown = document.getElementById('countdown');
+    setInterval(() => {
+        if (timeLeft <= 0) return;
+        timeLeft--;
+        const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+        const seconds = String(timeLeft % 60).padStart(2, '0');
+        countdown.textContent = `${minutes}:${seconds}`;
+    }, 1000);
+// end payment
+
+// start infor booking
+    function handleBooking() {
+      alert('Booking successful!');
+      window.location.href = homeUrl; 
+  }
+  
+
+  // increase/decrease quantity booking table
+  function formatMoney(value) {
+      return value.toLocaleString('vi-VN') + ' đ';
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+      const pricePerItem = 85000;
+
+      const increaseBtn = document.querySelector(".btn-increase");
+      const decreaseBtn = document.querySelector(".btn-decrease");
+      const quantitySpan = document.querySelector(".quantity");
+      const itemTotal = document.querySelector(".item-total");
+      const subtotal = document.getElementById("subtotal");
+      const total = document.getElementById("total");
+
+      function updateTotal(quantity) {
+          let totalPrice = pricePerItem * quantity;
+          itemTotal.innerText = `$${(totalPrice / 1000).toFixed(2)}`;
+          subtotal.innerText = formatMoney(totalPrice);
+          total.innerText = formatMoney(totalPrice);
+      }
+
+      increaseBtn.addEventListener("click", function () {
+          let quantity = parseInt(quantitySpan.innerText);
+          quantity++;
+          quantitySpan.innerText = quantity;
+          updateTotal(quantity);
+      });
+
+      decreaseBtn.addEventListener("click", function () {
+          let quantity = parseInt(quantitySpan.innerText);
+          if (quantity > 1) {
+              quantity--;
+              quantitySpan.innerText = quantity;
+              updateTotal(quantity);
+          }
+      });
+  });
+
+

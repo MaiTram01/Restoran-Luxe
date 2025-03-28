@@ -11,4 +11,7 @@ Route::get('/menu', [PageController::class, 'menu'])->name('menu');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/reservation', [PageController::class, 'reservation'])->name('reservation');
-Route::get('/booktable', [PageController::class, 'booktable'])->name('booktable');
+Route::get('/bookingtable', [PageController::class, 'bookingtable'])->name('bookingtable');
+Route::get('/payment', [PageController::class, 'payment'])->name('payment');
+Route::get('/bookingpayment', [PageController::class, 'bookingpayment'])->name('bookingpayment');
+Route::get('/infobooking', [PageController::class, 'infobooking'])->name('infobooking');

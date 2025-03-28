@@ -93,7 +93,7 @@
     <div class="d-flex justify-content-between px-2">
       <div class="footer-checkout">
         <div class="anim-layer"></div>
-        <a href="/booktable">Reservation</a>
+        <a href="/bookingtable">Reservation</a>
       </div>
       <div class="footer-shopping">
         <div class="anim-layer"></div>
