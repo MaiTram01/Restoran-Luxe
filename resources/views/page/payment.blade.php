@@ -98,7 +98,7 @@
                     <p><strong>Discount:</strong> 0 ₫</p>
                     <p><strong class="text-danger">Total (VAT included): 425,000 ₫</strong></p>
 
-                    <form action="#" method="POST">
+                    <form action="/bookingpayment" method="POST">
                         @csrf
                         <p class="mb-2"><strong>Payment Method:</strong></p>
 
@@ -131,8 +131,7 @@
                                 <label class="form-check-label">Partial Deposit</label>
                             </div>
                         </div>
-
-                        <a href="/bookingpayment" class="btn w-100">PAY NOW</a>
+                        <button type="submit" name="redirect" class="btn w-100">PAY NOW</button>
                     </form>
                 </div>
             </div>
