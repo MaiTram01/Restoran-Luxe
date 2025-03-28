@@ -2507,3 +2507,6 @@ table th {
 .author-name:hover {
   color: var(--primary-color);
 }
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}

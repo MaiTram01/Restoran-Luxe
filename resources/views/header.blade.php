@@ -37,9 +37,21 @@
             <a class="text-decoration-none" id="shoppingbutton" href="#">
                 <i class="fa fa-shopping-bag me"></i>
             </a>
-
-            <a class="sign-in" href="/signup">Sign up /</a>
-            <a class="sign-in" href="/login" >Sign in</a>
+            @if(Session::has('user'))
+                <li class="nav">
+                    <a class="nav-link dropdown-toggle" d-flex align-items-center href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user" style="color: #e5612f;"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li class="dropdown-item text-center">{{ Session('user')->username }}</li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-center" href="{{ route('logout') }}">Log out</a></li>
+                    </ul>
+                </li>
+            @else
+                <a class="sign-in" href={{ route('register') }}>Sign up /</a>
+                <a class="sign-in" href="{{ route('login') }}" >Sign in</a>
+            @endif
            
             <!-- <a class="text-decoration-none" href="/signup" style="color: white; font-size: 20px; font-weight: bold;" >Sign up /</a>
             <a class="text-decoration-none" href="/login" style="color: white; font-size: 20px; font-weight: bold;">Sign in</a> -->
