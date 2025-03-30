@@ -1,7 +1,7 @@
 <header>
     <div class="container header my-3 d-none d-lg-flex">
         <div class="logo">
-            <a href="/home">
+            <a href="{{ route('home') }}">
                 <i class="fa fa-utensils me-3"></i>
                 <h1 class="mb-0">Restoran</h1>
             </a>

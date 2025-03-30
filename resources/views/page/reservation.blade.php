@@ -84,7 +84,7 @@
         <div class="d-flex justify-content-between px-2">
             <div class="footer-checkout">
                 <div class="anim-layer"></div>
-                <a href="#">Checkout</a>
+                <a href="/bookingtable">Reservation</a>
             </div>
             <div class="footer-shopping">
                 <div class="anim-layer"></div>
@@ -200,7 +200,7 @@
                         <div class="text-center" data-aos="fade-up-left">
                             <div class="book-a-table contact-button">
                                 <div class="anim-layer"></div>
-                                <a href="#">Book Table</a>
+                                <a href="/infobooking">Book Table</a>
                             </div>
                         </div>
                     </form>

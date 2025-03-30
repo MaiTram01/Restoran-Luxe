@@ -671,6 +671,31 @@ a.sign-in {
   background-color: var(--primary-color);
 }
 
+/* Start Payment */
+th.order-menu-title {
+  color: black;
+}
+/* End Payment */
+
+/* Start Confirm booking */
+.confirm-booking {
+  background-color: var(--primary-color);
+  width: 200px;
+  text-align: center;
+  color: white;
+  margin: 10px 0px;
+  border-radius: 50px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.confirm-booking:hover {
+  transform: translateY(-3px); 
+}
+/* End confirm booking */
+
 .footer-checkout, .footer-shopping {
   background-color: var(--primary-color);
   width: 200px;
@@ -938,6 +963,7 @@ a.sign-in {
 }
 
 /* services cards end */
+
 
 /* about us start */
 .about-us {
@@ -1986,7 +2012,7 @@ table {
 
 table th, table td {
   padding: 12px;
-  text-align: left;
+  text-align: center;
   border: 1px solid #ddd;
 }
 

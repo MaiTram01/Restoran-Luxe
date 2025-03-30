@@ -26,8 +26,20 @@ class PageController extends Controller
     {
         return view('page.reservation');
     }
-    public function booktable()
+    public function bookingtable()
     {
-        return view('page.booktable');
+        return view('page.bookingtable');
+    }
+    public function payment()
+    {
+        return view('page.payment');
+    }
+    public function bookingpayment()
+    {
+        return view('page.bookingpayment');
+    }
+    public function infobooking()
+    {
+        return view('page.infobooking');
     }
 }
