@@ -1,6 +1,5 @@
 @extends('master')
 @section('content')
-
     <section class="page-banner d-flex align-items-center">
             <div class="container">
                 <div class="row">

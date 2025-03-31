@@ -32,7 +32,7 @@
                     <tr>
                         <td>1</td>
                         <td>
-                            <img src="" alt="food">
+                            <img src="source/assets/images/items/lunch/banh_mi.jpg" alt="food">
                             Pizza
                         </td>
                         <td>$85.00</td>
@@ -51,9 +51,9 @@
 
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <div>
-                    <a href="#" class="btn btn-light">❮ Continue ordering</a>
+                    <a href="/home" class="btn btn-light">❮ Continue ordering</a>
                     <a href="#" class="btn btn-danger">Clear all</a>
-                    <a href="/payment" class="btn btn-success">Checkout ❯</a>
+                    <!-- <a href="/payment" class="btn btn-success">Checkout ❯</a> -->
                 </div>
                 <div class="text-end">
                     <p>Subtotal: <strong id="subtotal">425,000 đ</strong></p>
