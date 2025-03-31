@@ -427,9 +427,6 @@ header.scrolled {
   font-size: 40px;
 }
 
-.menus > ul {
-}
-
 .menus > ul > li {
   position: relative;
 }
@@ -470,8 +467,8 @@ header.scrolled {
 
 .search input[type="text"] {
   width: 100%;
-  padding: 4px 4px; 
-  border: 2px solid var(--primary-color);
+  padding: 4px 15px; 
+  border: 2px solid transparent;
   border-radius: 20px;
   font-size: 16px;
   outline: none;
@@ -794,9 +791,6 @@ a.sign-in {
   background-repeat: no-repeat;
   background-size: cover;
   /* overflow: hidden; */
-}
-
-.banner .banner-content {
 }
 
 .banner-content h1 {
@@ -1970,6 +1964,14 @@ footer p {
 .list-food {
   padding: 20px;
 }
+.list-food img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+  max-width: 100px; 
+  max-height: 100px; 
+  object-position: center;
+}
 
 .list-food .container {
   max-width: 1000px;
@@ -2506,4 +2508,7 @@ table th {
 
 .author-name:hover {
   color: var(--primary-color);
+}
+.nav-link.dropdown-toggle::after {
+  display: none !important;
 }

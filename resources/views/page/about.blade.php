@@ -1,99 +1,5 @@
 @extends('master')
 @section('content')
-<div class="shopping-cart">
-    <div class="shopping-cart-header d-flex justify-content-between">
-        <h2>Review your Cart</h2>
-        <i class="fa fa-close"></i>
-    </div>
-    <div class="shopping-cart-body">
-        <div class="row shopping-cart-item d-flex justify-content-between">
-            <div class="col-2 d-flex align-items-center">
-                <img src="source/assets/images/product-2a.jpg" alt="">
-            </div>
-            <div class="col-8">
-                <h3>The Cracker Barrel's Country Boy Breakfast</h3>
-                <div class="shopping-cart-counter">
-                    <i class="fa fa-minus"></i>
-                    <span>1</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-            </div>
-            <div class="col-2 item-price d-flex align-items-end">
-                <p class="mb-0 text-center">$ 25.0</p>
-            </div>
-        </div>
-        <div class="row shopping-cart-item d-flex justify-content-between">
-            <div class="col-2 d-flex align-items-center">
-                <img src="source/assets/images/product-2b.jpg" alt="">
-            </div>
-            <div class="col-8">
-                <h3>Old Timer's Meat Breakfast</h3>
-                <div class="shopping-cart-counter">
-                    <i class="fa fa-minus"></i>
-                    <span>1</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-            </div>
-            <div class="col-2 item-price d-flex align-items-end">
-                <p class="mb-0 text-center">$ 12.0</p>
-            </div>
-        </div>
-        <div class="row shopping-cart-item d-flex justify-content-between">
-            <div class="col-2 d-flex align-items-center">
-                <img src="source/assets/images/product-2c.jpg" alt="">
-            </div>
-            <div class="col-8">
-                <h3>Uncle Herschel's Favorite</h3>
-                <div class="shopping-cart-counter">
-                    <i class="fa fa-minus"></i>
-                    <span>1</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-            </div>
-            <div class="col-2 item-price d-flex align-items-end">
-                <p class="mb-0 text-center">$ 25.0</p>
-            </div>
-        </div>
-        <div class="row shopping-cart-item d-flex justify-content-between">
-            <div class="col-2 d-flex align-items-center">
-                <img src="source/assets/images/product-2d.jpg" alt="">
-            </div>
-            <div class="col-8">
-                <h3>Grandpa's Country Fried Breakfast</h3>
-                <div class="shopping-cart-counter">
-                    <i class="fa fa-minus"></i>
-                    <span>1</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-            </div>
-            <div class="col-2 item-price d-flex align-items-end">
-                <p class="mb-0 text-center">$ 30.0</p>
-            </div>
-        </div>
-    </div>
-    <div class="shopping-cart-footer">
-        <div class="d-flex justify-content-between px-3 py-2">
-            <div>
-                <h2 class="mb-0">Subtotal</h2>
-                <p class="mb-0">Shipping & taxes calculated at checkout</p>
-            </div>
-            <div class="d-flex align-items-end">
-                <p class="footet-total-price mb-0">$ 92.0</p>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between px-2">
-            <div class="footer-checkout">
-                <div class="anim-layer"></div>
-                <a href="#">Checkout</a>
-            </div>
-            <div class="footer-shopping">
-                <div class="anim-layer"></div>
-                <a href="#">Continue Shopping</a>
-            </div>
-        </div>
-    </div>
-</div>
-
 <main class="about-page">
     <section class="page-banner d-flex align-items-center">
         <div class="container">
@@ -189,57 +95,57 @@
                     </div>
                     <div class="story-content py-5 my-4" data-aos="fade-right">
                         <div>
-                            <p class="text-center"><strong>16.10.2000:</strong>The Begin of Fooday Restaurents</p>
+                            <p class="text-center"><strong>10.10.2000:</strong>The Dream Begins</p>
                             <p class="text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                            Restoran Glory Story opened its doors in the year 2000 with a simple but powerful vision: to provide exceptional food in a warm, welcoming environment. Founded by a passionate team of culinary enthusiasts, the restaurant aimed to create a dining experience that would leave guests not just satisfied, but truly delighted. The initial concept was to bring high-quality, home-style dishes inspired by both local and international flavors.
                             </p>
                             <p class="text-center">
-                                Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            </p>
-                        </div>
-                        <div>
-                            <p class="text-center"><strong>16.10.2000:</strong>The Begin of Fooday Restaurents</p>
-                            <p class="text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-                            </p>
-                            <p class="text-center">
-                                Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            From the very start, we placed great emphasis on using fresh, locally-sourced ingredients, ensuring that every dish served was bursting with flavor and authenticity. This commitment to quality quickly made Restoran Glory Story a favorite among early patrons, setting the stage for a long-lasting culinary journey.
                             </p>
                         </div>
                         <div>
-                            <p class="text-center"><strong>16.10.2000:</strong>The Begin of Fooday Restaurents</p>
+                            <p class="text-center"><strong>01.11.2002:</strong>Expansion and Growth</p>
                             <p class="text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                            By 2002, we recognized that our guests were craving variety and innovation, so we began expanding our menu to incorporate a wider range of global cuisines. Influenced by international culinary traditions, we introduced exciting new flavors and dishes, blending classic recipes with contemporary twists. Our chefs took the time to experiment with new techniques and ingredients, refining every dish to perfection.
                             </p>
                             <p class="text-center">
-                                Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                            </p>
-                        </div>
-                        <div>
-                            <p class="text-center"><strong>16.10.2000:</strong>The Begin of Fooday Restaurents</p>
-                            <p class="text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-                            </p>
-                            <p class="text-center">
-                                Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            This expansion allowed us to cater to an even broader audience, appealing to food lovers with diverse tastes and preferences. The new offerings quickly became fan favorites, further establishing Restoran Glory Story as a culinary destination known for creativity, quality, and an ever-evolving menu.
                             </p>
                         </div>
                         <div>
-                            <p class="text-center"><strong>16.10.2000:</strong>The Begin of Fooday Restaurents</p>
+                            <p class="text-center"><strong>21.09.2004:</strong>Recognition and Success</p>
                             <p class="text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                            By 2004, Restoran Glory Story had firmly planted itself within the local dining scene. Word-of-mouth recommendations, glowing reviews, and the growing number of loyal customers helped us earn a stellar reputation for both our food and service. This was also the year we began to receive industry recognition, garnering awards for excellence in food quality and customer satisfaction.
                             </p>
                             <p class="text-center">
-                                Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Our team worked tirelessly to maintain consistency in delivering outstanding dining experiences, and this dedication paid off as our restaurant became a go-to choice for both casual meals and special celebrations. It was during this time that Restoran Glory Story truly became a household name, synonymous with great taste and unforgettable meals.
                             </p>
                         </div>
                         <div>
-                            <p class="text-center"><strong>16.10.2000:</strong>The Begin of Fooday Restaurents</p>
+                            <p class="text-center"><strong>29.11.2008:</strong>Renovation and Rebranding</p>
                             <p class="text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                            In 2008, Restoran Glory Story underwent a significant transformation. After nearly a decade of success, it was time for a change that would reflect our evolution and growth. We embarked on a major renovation to update the interior design, giving the space a more modern and stylish look. The new design was a perfect blend of elegance and warmth, creating a more sophisticated atmosphere while still retaining the cozy, welcoming vibe that our regular customers loved. 
                             </p>
                             <p class="text-center">
-                                Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                            Alongside the renovation, we also rebranded our restaurant, updating our logo and signage to align with the new direction we were taking. The 2008 rebrand was a pivotal moment for Restoran Glory Story, symbolizing a new era of innovation, luxury, and continued excellence in dining.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-center"><strong>23.02.2012:</strong>Private Events and New Ventures</p>
+                            <p class="text-center">
+                            In 2012, we expanded our services by introducing private event hosting. This new offering allowed guests to celebrate special moments like birthdays, weddings, anniversaries, and corporate events in an exclusive setting. Our versatile event spaces were designed to accommodate both intimate gatherings and larger celebrations, complete with personalized service and tailored menus. 
+                            </p>
+                            <p class="text-center">
+                            Whether hosting a small family dinner or a grand corporate function, Restoran Glory Story became the go-to venue for those looking for a memorable experience. This new venture helped further solidify our place in the hearts of our customers and expanded our reach beyond everyday dining to become a key player in event hospitality.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-center"><strong>12.04.2016:</strong>A Continued Legacy of Excellence</p>
+                            <p class="text-center">
+                            By 2016, Restoran Glory Story had truly become a culinary institution. We had built a loyal customer base and maintained our reputation for offering exceptional food, impeccable service, and a unique dining atmosphere. Our chefs continued to innovate, experimenting with new flavors and techniques while staying true to our commitment to quality. As the years passed, we refined our services and offerings, ensuring that every guest received a personalized and memorable dining experience. 
+                            </p>
+                            <p class="text-center">
+                            With an ever-evolving menu and an unwavering dedication to excellence, Restoran Glory Story was poised for an exciting future. Our focus remained on providing guests with the best of everything, from the freshest ingredients to the finest hospitality, continuing the legacy of exceptional dining that began in 2000.
                             </p>
                         </div>
                     </div>
@@ -260,7 +166,7 @@
                         <div class="slider-content pt-5 pb-4 mx-4" data-aos="fade-down-left">
                             <div>
                                 <div class="testi-content">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                                    <p>Discover why our guests love us—delicious meals, exceptional service, and a welcoming atmosphere. We’re proud to create memorable experiences that keep customers coming back.</p>
                                 </div>
                                 <div class="d-flex justify-content-center mb-3">
                                     <img src="source/assets/images/testi-signal.png" alt="">
@@ -272,7 +178,7 @@
                             </div>
                             <div>
                                 <div class="testi-content">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                                    <p>Hear what our satisfied guests have to say about our mouthwatering dishes, friendly service, and cozy ambiance. We strive to make every visit special, ensuring you leave with a smile and come back for more.</p>
                                 </div>
                                 <div class="d-flex justify-content-center mb-3">
                                     <img src="source/assets/images/testi-signal.png" alt="">
@@ -284,7 +190,7 @@
                             </div>
                             <div>
                                 <div class="testi-content">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                                    <p>From the first bite to the last, our guests rave about our flavorful meals, attentive staff, and inviting environment. We focus on creating an exceptional dining experience that keeps our customers returning time and time again.</p>
                                 </div>
                                 <div class="d-flex justify-content-center mb-3">
                                     <img src="source/assets/images/testi-signal.png" alt="">
@@ -296,7 +202,7 @@
                             </div>
                             <div>
                                 <div class="testi-content">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                                    <p>Our guests can't stop talking about the perfect blend of taste, service, and atmosphere. With every visit, we aim to exceed expectations, making each dining experience unforgettable and leaving our customers eager to return.</p>
                                 </div>
                                 <div class="d-flex justify-content-center mb-3">
                                     <img src="source/assets/images/testi-signal.png" alt="">
@@ -345,7 +251,7 @@
                         <div class="box-inner">
                             <div class="box-wrapper px-4">
                                 <h2 class="pb-2">FRESH MENU</h2>
-                                <p class="pb-4">Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                <p class="pb-4">Enjoy a selection of newly crafted dishes made with the finest, freshest ingredients for every taste.</p>
                                 <div class="book-a-table">
                                     <div class="anim-layer"></div>
                                     <a href="#">Read More</a>
@@ -365,7 +271,7 @@
                         <div class="box-inner">
                             <div class="box-wrapper px-4">
                                 <h2 class="pb-2">VARIOUS DRINK</h2>
-                                <p class="pb-4">Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                <p class="pb-4">Explore our diverse selection of refreshing beverages, from classic favorites to unique, signature creations.</p>
                                 <div class="book-a-table">
                                     <div class="anim-layer"></div>
                                     <a href="#">Read More</a>
@@ -385,7 +291,7 @@
                         <div class="box-inner">
                             <div class="box-wrapper px-4">
                                 <h2 class="pb-2">EXCLUSIVE DISHES</h2>
-                                <p class="pb-4">Lorem ipsum dolor sit amet, consec adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                <p class="pb-4">Savor our unique, specially crafted dishes, designed to offer an unforgettable and exceptional dining experience.</p>
                                 <div class="book-a-table">
                                     <div class="anim-layer"></div>
                                     <a href="#">Read More</a>

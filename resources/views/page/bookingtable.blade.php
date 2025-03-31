@@ -19,24 +19,49 @@
     <section class="list-food">
         <div class="container">
             <table>
-                <tr>
-                    <th>Id</th>
-                    <th>Foods</th>
-                    <th>Table Price</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <img src="" alt="food">
-                        Pizza
-                    </td>
-                    <td>$85.00</td>
-                    <td>5</td>
-                    <td>$425.00</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Foods</th>
+                        <th>Table Price</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img src="source/assets/images/items/lunch/banh_mi.jpg" alt="food">
+                            Pizza
+                        </td>
+                        <td>$85.00</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-danger btn-decrease">-</button>
+                            <span class="mx-2 quantity">5</span>
+                            <button class="btn btn-sm btn-outline-success btn-increase">+</button>
+                        </td>
+                        <td class="item-total">$425.00</td>
+                        <td>
+                            <i class="bi bi-trash text-danger"></i>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                    <a href="#" class="btn btn-light">❮ Continue ordering</a>
+                    <a href="#" class="btn btn-danger">Clear all</a>
+                    <!-- <a href="/payment" class="btn btn-success">Checkout ❯</a> -->
+                </div>
+                <div class="text-end">
+                    <p>Subtotal: <strong id="subtotal">425,000 đ</strong></p>
+                    <p>Discount: <strong>0 đ</strong></p>
+                    <p class="text-danger fw-bold">Total (VAT included): <span id="total">425,000 đ</span></p>
+                </div>
+            </div>
         </div>
     </section>
 
