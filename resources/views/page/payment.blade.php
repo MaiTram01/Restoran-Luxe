@@ -1,5 +1,4 @@
 @extends('master')
-
 @section('content')
 <section class="page-banner d-flex align-items-center">
     <div class="container">
@@ -16,7 +15,6 @@
         </div>
     </div>
 </section>
-
 <div class="container my-5">
     <a href="/bookingtable" class="btn btn-light mb-3">← Back</a>
     <h4 class="text-center mb-4">ADVANCE PAYMENT FOR RESERVATION</h4>

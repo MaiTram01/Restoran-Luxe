@@ -1,99 +1,5 @@
 @extends('master')
 @section('content')
-<div class="shopping-cart">
-    <div class="shopping-cart-header d-flex justify-content-between">
-        <h2>Review your Cart</h2>
-        <i class="fa fa-close"></i>
-    </div>
-    <div class="shopping-cart-body">
-        <div class="row shopping-cart-item d-flex justify-content-between">
-            <div class="col-2 d-flex align-items-center">
-                <img src="source/assets/images/product-2a.jpg" alt="">
-            </div>
-            <div class="col-8">
-                <h3>The Cracker Barrel's Country Boy Breakfast</h3>
-                <div class="shopping-cart-counter">
-                    <i class="fa fa-minus"></i>
-                    <span>1</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-            </div>
-            <div class="col-2 item-price d-flex align-items-end">
-                <p class="mb-0 text-center">$ 25.0</p>
-            </div>
-        </div>
-        <div class="row shopping-cart-item d-flex justify-content-between">
-            <div class="col-2 d-flex align-items-center">
-                <img src="source/assets/images/product-2b.jpg" alt="">
-            </div>
-            <div class="col-8">
-                <h3>Old Timer's Meat Breakfast</h3>
-                <div class="shopping-cart-counter">
-                    <i class="fa fa-minus"></i>
-                    <span>1</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-            </div>
-            <div class="col-2 item-price d-flex align-items-end">
-                <p class="mb-0 text-center">$ 12.0</p>
-            </div>
-        </div>
-        <div class="row shopping-cart-item d-flex justify-content-between">
-            <div class="col-2 d-flex align-items-center">
-                <img src="source/assets/images/product-2c.jpg" alt="">
-            </div>
-            <div class="col-8">
-                <h3>Uncle Herschel's Favorite</h3>
-                <div class="shopping-cart-counter">
-                    <i class="fa fa-minus"></i>
-                    <span>1</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-            </div>
-            <div class="col-2 item-price d-flex align-items-end">
-                <p class="mb-0 text-center">$ 25.0</p>
-            </div>
-        </div>
-        <div class="row shopping-cart-item d-flex justify-content-between">
-            <div class="col-2 d-flex align-items-center">
-                <img src="source/assets/images/product-2d.jpg" alt="">
-            </div>
-            <div class="col-8">
-                <h3>Grandpa's Country Fried Breakfast</h3>
-                <div class="shopping-cart-counter">
-                    <i class="fa fa-minus"></i>
-                    <span>1</span>
-                    <i class="fa fa-plus"></i>
-                </div>
-            </div>
-            <div class="col-2 item-price d-flex align-items-end">
-                <p class="mb-0 text-center">$ 30.0</p>
-            </div>
-        </div>
-    </div>
-    <div class="shopping-cart-footer">
-        <div class="d-flex justify-content-between px-3 py-2">
-            <div>
-                <h2 class="mb-0">Subtotal</h2>
-                <p class="mb-0">Shipping & taxes calculated at checkout</p>
-            </div>
-            <div class="d-flex align-items-end">
-                <p class="footet-total-price mb-0">$ 92.0</p>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between px-2">
-            <div class="footer-checkout">
-                <div class="anim-layer"></div>
-                <a href="/bookingtable">Reservation</a>
-            </div>
-            <div class="footer-shopping">
-                <div class="anim-layer"></div>
-                <a href="#">Continue Shopping</a>
-            </div>
-        </div>
-    </div>
-</div>
-
 <main class="reservation-page">
     <section class="page-banner d-flex align-items-center">
         <div class="container">
@@ -225,7 +131,7 @@
                         <span class="number">1</span>
                     </div>
                     <h4>Reservation</h4>
-                    <p class="text-center">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</p>
+                    <p class="text-center">Providing effortless reservations, excellent service, and a memorable dining experience.</p>
                 </div>
                 <div data-aos="fade-down" class="position-relative col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
                     <div class="icon-box">
@@ -233,7 +139,7 @@
                         <span class="number">2</span>
                     </div>
                     <h4>Private Event</h4>
-                    <p class="text-center">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</p>
+                    <p class="text-center">Host your special occasion with us, featuring exclusive service and personalized experiences.</p>
                 </div>
                 <div data-aos="fade-up" class="position-relative col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
                     <div class="icon-box">
@@ -241,7 +147,7 @@
                         <span class="number">3</span>
                     </div>
                     <h4>Online Order</h4>
-                    <p class="text-center">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</p>
+                    <p class="text-center">Enjoy your favorite dishes delivered fast and conveniently, right to your door.</p>
                 </div>
                 <div data-aos="fade-left" class="position-relative col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
                     <div class="icon-box">
@@ -249,7 +155,7 @@
                         <span class="number">4</span>
                     </div>
                     <h4>Fast Delivery</h4>
-                    <p class="text-center">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</p>
+                    <p class="text-center">Get your meals quickly and fresh, delivered straight to your door in no time.</p>
                 </div>
             </div>
         </div>
@@ -269,7 +175,7 @@
                     <div class="event-card position-relative">
                         <div class="event-heading d-flex py-2">
                             <div class="event-date px-3 d-flex flex-column">
-                                <h5 class="event-day">12</h5>
+                                <h5 class="event-day">18</h5>
                                 <h6 class="event-month">JUN</h6>
                             </div>
                             <div class="heading ps-3 d-flex align-items-center">
@@ -282,15 +188,15 @@
                         <div class="event-info position-absolute">
                             <ul class="d-flex justify-content-around ps-lg-0 position-relative my-3">
                                 <li class="list-unstyled">
-                                    <span class="num">03</span>
+                                    <span class="num">08</span>
                                     <span class="cap">/days</span>
                                 </li>
                                 <li class="list-unstyled">
-                                    <span class="num">50</span>
+                                    <span class="num">60</span>
                                     <span class="cap">/foods</span>
                                 </li>
                                 <li class="list-unstyled">
-                                    <span class="num">290</span>
+                                    <span class="num">200</span>
                                     <span class="cap">/guests</span>
                                 </li>
                             </ul>
@@ -305,7 +211,7 @@
                                 <h6 class="event-month">JUN</h6>
                             </div>
                             <div class="heading ps-3 d-flex align-items-center">
-                                <p class="mb-0">Hong Kong Tasty Food Cooking Event</p>
+                                <p class="mb-0">Authentic Hong Kong Flavors Cooking Experience</p>
                             </div>
                         </div>
                         <div class="image">
@@ -314,15 +220,15 @@
                         <div class="event-info position-absolute">
                             <ul class="d-flex justify-content-around ps-lg-0 position-relative my-3">
                                 <li class="list-unstyled">
-                                    <span class="num">03</span>
+                                    <span class="num">06</span>
                                     <span class="cap">/days</span>
                                 </li>
                                 <li class="list-unstyled">
-                                    <span class="num">50</span>
+                                    <span class="num">80</span>
                                     <span class="cap">/foods</span>
                                 </li>
                                 <li class="list-unstyled">
-                                    <span class="num">290</span>
+                                    <span class="num">250</span>
                                     <span class="cap">/guests</span>
                                 </li>
                             </ul>

@@ -15,7 +15,6 @@
             </div>
         </div>
     </section>
-
     <div class="container mt-5 w-50">
         <!-- Reservation Info -->
         <div class="card mb-3">

@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col-lg-6 px-0">
             <div class="logo" data-aos="fade-down-right">
-              <a href="./index.html">
+              <a href="./home">
                 <i class="fa fa-utensils me-3"></i>
                 <h1 class="mb-0">Restoran</h1>
               </a>
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="row pt-5 content-desc" data-aos="fade-right">
-          <p class="px-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor.</p>
+          <p class="px-0">Discover a culinary haven where exquisite flavors, elegant ambiance, and impeccable service combine to create unforgettable dining experiences, making every visit a delightful journey for your taste buds.</p>
         </div>
         <div class="row" data-aos="fade-right">
           <div class="d-flex flex-column flex-lg-row px-0 justify-content-between">
@@ -96,13 +96,13 @@
               <p>Monday: ............................. Close</p>
             </div>
             <h2 class="pb-2">Reservation Numbers</h2>
-            <h3>(617)-276-8031</h3>
+            <h3>+84 458 729 580</h3>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <p class="text-center pt-4 mt-3 pt-lg-0">&copy; <span id="copyrightCurrentYear"></span> <b> Restoran.</b> All rights reserved. Design by <a href="https://www.linkedin.com/in/codewithshabbir/" class="fw-bold author-name">Muhammad Shabbir</a></p>
+      <p class="text-center pt-4 mt-3 pt-lg-0">&copy; <span id="copyrightCurrentYear"></span> <b> Restoran.</b> All rights reserved. Design by LuxeBites</p>
     </div>
   </div>
 </footer>
