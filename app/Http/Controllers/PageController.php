@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Item;
 
 class PageController extends Controller
 {
@@ -50,4 +51,16 @@ class PageController extends Controller
     {
         return view('page.infobooking');
     }
+    public function productdetail($productId)
+    {
+        $product = Item::with('category')->find($productId); 
+        if (!$product) {
+            return redirect()->route('home')->with('error', 'Product not found.');
+        }
+        $relatedProducts = Item::where('category_id', $product->category_id)
+                                ->where('id', '!=', $productId) 
+                                ->take(4)
+                                ->get();
+        return view('page.productdetail', compact('product', 'relatedProducts'));
+    }   
 }
