@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Item;
 
 class PageController extends Controller
 {
@@ -49,5 +50,18 @@ class PageController extends Controller
     public function infobooking()
     {
         return view('page.infobooking');
+    }
+
+    public function search(Request $request)
+    {
+        $key = $request->input('key');
+    
+        if ($key) {
+            $items = Item::where('item_name', 'like', '%' . $key . '%')->get();
+        } else {
+            $items = Item::all();
+        }
+    
+        return view('page.search', compact('key','items'));
     }
 }

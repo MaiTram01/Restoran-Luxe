@@ -37,11 +37,10 @@
         </div>
 
         <div class="icons" style="display: flex; align-items: center; gap: 8px;">
-            <div class="search" id="searchBtn">
-                <input type="text" placeholder="Enter foods..." />
-                <i class="fa fa-search"></i>
-                
-            </div>
+          <form action="/search" method="get" onkeydown="submitOnEnter(event)" class="search" id="searchBtnMobile">
+            <input  class="search-input" name="key" placeholder="Enter foods..."  required/>
+            <button class="btn-submit" type="submit"><i class="fa fa-search"></i></button>
+          </form>
   
             <a class="text-decoration-none" id="shoppingbutton" href="#">
                 <i class="fa fa-shopping-bag me"></i>
@@ -84,10 +83,10 @@
 
         <div class="mobile-nav-icons">
             <div class="icons" style="display: flex; align-items: center; gap: 8px;">
-                <div class="search" id="searchBtnMobile">
-                    <input type="search" placeholder="Enter foods..." />
-                    <i class="fa fa-search"></i>
-                </div>
+                <form action="/search" method="get" onkeydown="submitOnEnter(event)" class="search" id="searchBtnMobile">
+                    <input  class="search-input"  name="key" placeholder="Enter foods..." required/>
+                    <button  class="btn-submit" type="submit"><i class="fa fa-search"></i></button>
+                </form>
                 
                 <a class="text-decoration-none" id="shoppingbuttonMobile" href="#">
                     <i class="fa fa-shopping-bag"></i>

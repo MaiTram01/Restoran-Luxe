@@ -10,3 +10,12 @@
     <script>
       const homeUrl = "{{ route('home') }}";
     </script>
+
+<script>
+    function submitOnEnter(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();  
+            event.target.form.submit(); 
+        }
+    }
+</script>

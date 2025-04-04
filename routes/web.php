@@ -42,3 +42,5 @@ Route::get('/verify-email/{token}', function ($token) {
 
     return response('<html><body><h2>Tài khoản của bạn đã được xác nhận!</h2></body></html>');
 })->name('verify.email');
+
+Route::get('/search', [PageController::class, 'search'])->name('search');
