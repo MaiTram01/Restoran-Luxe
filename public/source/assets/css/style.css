@@ -1195,7 +1195,7 @@ th.order-menu-title {
   color: var(--text-color-white);
   background-color: var(--primary-color);
   padding: 4px 12px;
-  font-size: 14px;
+  font-size: 11px;
   text-transform: uppercase;
   border-radius: 20px;
 }

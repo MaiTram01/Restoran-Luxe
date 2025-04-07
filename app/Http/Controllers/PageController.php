@@ -35,8 +35,15 @@ class PageController extends Controller
         return view('users.register');
     }
     public function bookingtable()
-    {
-        return view('page.bookingtable');
+    {   
+        $cart = session('cart', []); 
+
+        $subtotal = 0;
+        foreach ($cart as $item) {
+            $subtotal += $item['price'] * $item['quantity'];
+        }
+
+        return view('page.bookingtable', compact('cart', 'subtotal'));
     }
     public function payment()
     {
