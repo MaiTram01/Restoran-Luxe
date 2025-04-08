@@ -14,6 +14,7 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/reservation', [PageController::class, 'reservation'])->name('reservation');
 Route::get('/bookingtable', [PageController::class, 'bookingtable'])->name('bookingtable');
 Route::get('/payment', [PageController::class, 'payment'])->name('payment');
+Route::get('/productdetail/{productId}', [PageController::class, 'productdetail'])->name('productdetail');
 Route::get('/infobooking', [PageController::class, 'infobooking'])->name('infobooking');
 
 //payment
