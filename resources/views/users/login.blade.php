@@ -2,7 +2,7 @@
 @section('title', 'Login')
 
 @section('content')
-    @include('error')
+    @include('Layouts.Client.error')
     <form action="login" method="POST" class="form">
         @csrf
         @if (session('error'))
@@ -11,7 +11,7 @@
             </script>
         @endif
         <div class="form-inner">
-            <h2>User Login</h2>
+            <h2>User Sign in</h2>
             <div class="input-wrapper">
                 <label for="login-username">Email</label>
                 <div class="input-group"><span class="icon">

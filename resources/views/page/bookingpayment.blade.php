@@ -1,4 +1,4 @@
-@extends('master')
+@extends('Layouts.Client.master')
 @section('content')
     <section class="page-banner d-flex align-items-center">
             <div class="container">

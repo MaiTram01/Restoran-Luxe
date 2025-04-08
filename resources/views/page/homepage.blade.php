@@ -1,4 +1,4 @@
-@extends('master')
+@extends('Layouts.Client.master')
 @section('content')
 <main>
   <section class="banner py-5">
