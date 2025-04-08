@@ -6,9 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Models\User;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/home', [PageController::class, 'home'])->name('home');
 Route::get('/menu', [PageController::class, 'menu'])->name('menu');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
@@ -16,7 +14,6 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/reservation', [PageController::class, 'reservation'])->name('reservation');
 Route::get('/bookingtable', [PageController::class, 'bookingtable'])->name('bookingtable');
 Route::get('/payment', [PageController::class, 'payment'])->name('payment');
-// Route::get('/bookingpayment', [PageController::class, 'bookingpayment'])->name('bookingpayment');
 Route::get('/infobooking', [PageController::class, 'infobooking'])->name('infobooking');
 
 //payment
@@ -42,3 +39,16 @@ Route::get('/verify-email/{token}', function ($token) {
 
     return response('<html><body><h2>Tài khoản của bạn đã được xác nhận!</h2></body></html>');
 })->name('verify.email');
+
+
+
+
+
+// Admin
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('/', [PageController::class, 'adminDashboard'])->name('adminDashboard');
+    Route::get('/bill', [PageController::class, 'adminBill'])->name('adminBill');
+    Route::get('/login', [PageController::class, 'login'])->name('login_admin');
+    Route::post('/login', [PageController::class, 'login_post_admin']);
+    Route::get('/logout', [PageController::class, 'logout_admin']);
+});

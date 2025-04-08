@@ -1,9 +1,7 @@
 @extends('users.layout')
-
 @section('title', 'Register')
-
 @section('content')
-    @include('error')
+    @include('Layouts.Client.error')
     <form action="register" method="POST" class="form">
         @csrf
         @if (session('error'))
@@ -11,9 +9,8 @@
                 alert("{{ session('error') }}");
             </script>
         @endif
-
         <div class="form-inner">
-            <h2>User Register</h2>
+            <h2>User Sign up</h2>
             <div class="input-wrapper">
                 <label for="">Full Name</label>
                 <div class="input-group"><span class="icon">

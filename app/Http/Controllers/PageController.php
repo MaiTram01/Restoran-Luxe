@@ -50,4 +50,12 @@ class PageController extends Controller
     {
         return view('page.infobooking');
     }
+    public function adminDashboard()
+    {
+        return view('pageadmin.dashboard.index');
+    }
+    public function adminBill()
+    {
+        return view('pageadmin.table.reservationSchedule');
+    }
 }
