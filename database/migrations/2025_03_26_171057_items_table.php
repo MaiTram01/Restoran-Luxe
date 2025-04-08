@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('avatar', 50)->default('default.png');
             $table->boolean('is_active')->default(true);
             $table->string('description', 255)->nullable();
+            $table->string('description_detail', 255)->nullable();
             $table->timestamps();
         });
     }

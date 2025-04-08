@@ -564,6 +564,26 @@ a.sign-in {
 }
 /* Sign up - Sign - in */
 
+/* Product detail */
+.product-detail {
+  display: flex;
+  gap: 50px;
+  width: 100%;      
+  height: 400px;
+}
+
+.product-detail .col-md-6 {
+  flex-direction: column;
+  align-items: center;
+}
+
+img.product-image {
+  width: 100%;      
+  height: 400px;    
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
 /* shopping cart start */
 
 .shopping-cart {

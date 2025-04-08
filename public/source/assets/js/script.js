@@ -356,38 +356,66 @@ document.addEventListener('DOMContentLoaded', function () {
       return value.toLocaleString('vi-VN') + ' đ';
   }
 
+  // document.addEventListener("DOMContentLoaded", function () {
+  //     const pricePerItem = 85000;
+
+  //     const increaseBtn = document.querySelector(".btn-increase");
+  //     const decreaseBtn = document.querySelector(".btn-decrease");
+  //     const quantitySpan = document.querySelector(".quantity");
+  //     const itemTotal = document.querySelector(".item-total");
+  //     const subtotal = document.getElementById("subtotal");
+  //     const total = document.getElementById("total");
+
+  //     function updateTotal(quantity) {
+  //         let totalPrice = pricePerItem * quantity;
+  //         itemTotal.innerText = `$${(totalPrice / 1000).toFixed(2)}`;
+  //         subtotal.innerText = formatMoney(totalPrice);
+  //         total.innerText = formatMoney(totalPrice);
+  //     }
+
+  //     increaseBtn.addEventListener("click", function () {
+  //         let quantity = parseInt(quantitySpan.innerText);
+  //         quantity++;
+  //         quantitySpan.innerText = quantity;
+  //         updateTotal(quantity);
+  //     });
+
+  //     decreaseBtn.addEventListener("click", function () {
+  //         let quantity = parseInt(quantitySpan.innerText);
+  //         if (quantity > 1) {
+  //             quantity--;
+  //             quantitySpan.innerText = quantity;
+  //             updateTotal(quantity);
+  //         }
+  //     });
+  // });
+
   document.addEventListener("DOMContentLoaded", function () {
-      const pricePerItem = 85000;
+    const pricePerItem = parseFloat(document.getElementById("item-price").innerText.replace(/[^0-9.-]+/g,""));
+    
+    const increaseBtn = document.querySelector(".btn-increase");
+    const decreaseBtn = document.querySelector(".btn-decrease");
+    const quantitySpan = document.querySelector(".quantity");
+    const itemTotal = document.querySelector(".item-total");
+    
+    function updateTotal(quantity) {
+        let totalPrice = pricePerItem * quantity;
+        itemTotal.innerText = `$${totalPrice.toFixed(2)}`;
+    }
 
-      const increaseBtn = document.querySelector(".btn-increase");
-      const decreaseBtn = document.querySelector(".btn-decrease");
-      const quantitySpan = document.querySelector(".quantity");
-      const itemTotal = document.querySelector(".item-total");
-      const subtotal = document.getElementById("subtotal");
-      const total = document.getElementById("total");
+    increaseBtn.addEventListener("click", function () {
+        let quantity = parseInt(quantitySpan.innerText);
+        quantity++;
+        quantitySpan.innerText = quantity;
+        updateTotal(quantity);
+    });
 
-      function updateTotal(quantity) {
-          let totalPrice = pricePerItem * quantity;
-          itemTotal.innerText = `$${(totalPrice / 1000).toFixed(2)}`;
-          subtotal.innerText = formatMoney(totalPrice);
-          total.innerText = formatMoney(totalPrice);
-      }
-
-      increaseBtn.addEventListener("click", function () {
-          let quantity = parseInt(quantitySpan.innerText);
-          quantity++;
-          quantitySpan.innerText = quantity;
-          updateTotal(quantity);
-      });
-
-      decreaseBtn.addEventListener("click", function () {
-          let quantity = parseInt(quantitySpan.innerText);
-          if (quantity > 1) {
-              quantity--;
-              quantitySpan.innerText = quantity;
-              updateTotal(quantity);
-          }
-      });
-  });
-
-
+    decreaseBtn.addEventListener("click", function () {
+        let quantity = parseInt(quantitySpan.innerText);
+        if (quantity > 1) {
+            quantity--;
+            quantitySpan.innerText = quantity;
+            updateTotal(quantity);
+        }
+    });
+});
