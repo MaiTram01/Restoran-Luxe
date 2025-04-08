@@ -29,23 +29,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>
-                            <img src="source/assets/images/items/lunch/banh_mi.jpg" alt="food">
-                            Pizza
-                        </td>
-                        <td>$85.00</td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-danger btn-decrease">-</button>
-                            <span class="mx-2 quantity">5</span>
-                            <button class="btn btn-sm btn-outline-success btn-increase">+</button>
-                        </td>
-                        <td class="item-total">$425.00</td>
-                        <td>
-                            <i class="bi bi-trash text-danger"></i>
-                        </td>
-                    </tr>
+                    @foreach ($cart as $item)
+                        <tr>
+                            <td>{{ $item['id'] }}</td>
+                            <td>
+                                <img src="{{  asset('source/assets/images/items/' . ($item['categoryName']) . '/' . $item['avatar']) }}" width="60">
+                                {{ $item['name'] }}
+                            </td>
+                            <td>${{ number_format($item['price'], 2) }}</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-danger btn-decrease ">-</button>
+                                <span class="mx-2 quantity">{{ $item['quantity'] }}</span>
+                                <button class="btn btn-sm btn-outline-success btn-increase">+</button>
+                            </td>
+                            <td class="item-total">${{ number_format($item['price'] * $item['quantity'], 2) }}</td>
+                            <td>
+                                <i class="bi bi-trash text-danger"></i>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
 
@@ -56,9 +58,9 @@
                     <!-- <a href="/payment" class="btn btn-success">Checkout ❯</a> -->
                 </div>
                 <div class="text-end">
-                    <p>Subtotal: <strong id="subtotal">425,000 đ</strong></p>
-                    <p>Discount: <strong>0 đ</strong></p>
-                    <p class="text-danger fw-bold">Total (VAT included): <span id="total">425,000 đ</span></p>
+                <p>Subtotal: <strong id="subtotal">${{ number_format($subtotal, 2) }}</strong></p>
+                <p>Discount: <strong>$0.00</strong></p>
+                <p class="text-danger fw-bold">Total (VAT included): <span id="total">${{ number_format($subtotal, 2) }}</span></p>
                 </div>
             </div>
         </div>

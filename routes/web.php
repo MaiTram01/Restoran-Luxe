@@ -4,7 +4,9 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 use App\Models\User;
+use App\Http\Controllers\CartController;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/home', [PageController::class, 'home'])->name('home');
@@ -17,7 +19,7 @@ Route::get('/payment', [PageController::class, 'payment'])->name('payment');
 Route::get('/productdetail/{productId}', [PageController::class, 'productdetail'])->name('productdetail');
 Route::get('/infobooking', [PageController::class, 'infobooking'])->name('infobooking');
 
-//payment
+//Payment
 Route::post('/bookingpayment', [PaymentController::class, 'vnPaid']);
 
 //User
@@ -41,10 +43,18 @@ Route::get('/verify-email/{token}', function ($token) {
     return response('<html><body><h2>Tài khoản của bạn đã được xác nhận!</h2></body></html>');
 })->name('verify.email');
 
+// Product
+Route::get('/products/{category_id}', [ProductController::class, 'getProductsByCategory']);
 
-
-
-
+// Cart
+Route::middleware(['auth'])->group(function () {
+    Route::post('/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
+    Route::get('/cart', [CartController::class, 'showCart'])->name('cart.show');
+    Route::post('/cart/update', [CartController::class, 'update']);
+    Route::post('/cart/remove/{cart_id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
+    Route::get('/cart/clear', [CartController::class, 'clearCart'])->name('cart.clear');
+});
+Route::get('/cart/load', [CartController::class, 'load']);
 // Admin
 Route::group(['prefix' => 'admin'], function() {
     Route::get('/', [PageController::class, 'adminDashboard'])->name('adminDashboard');
